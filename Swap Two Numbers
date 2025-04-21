@@ -1,0 +1,14 @@
+class Main {
+    public static void main(String[] args) {
+        int a = 3, b = 9;
+        int[] result = Swap(a, b);
+        System.out.println("After swap: a = " + result[0] + ", b = " + result[1]);
+    }
+
+    public static int[] Swap(int a, int b) {
+        int temp = a;
+        a = b;
+        b = temp;
+        return new int[]{a, b};
+    }
+}
